@@ -12,6 +12,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
+      '~assets': path.resolve(__dirname, 'src/assets'),
       '~components': path.resolve(__dirname, 'src/components'),
       '~pages': path.resolve(__dirname, 'src/pages'),
       '~apis': path.resolve(__dirname, 'src/lib/apis'),
@@ -41,6 +42,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/i,
+        use: ['@svgr/webpack'],
       },
     ],
   },

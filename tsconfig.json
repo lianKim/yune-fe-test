@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
+      "~assets/*": ["assets/*"],
       "~components/*": ["components/*"],
       "~pages/*": ["pages/*"],
       "~apis/*": ["lib/apis/*"]

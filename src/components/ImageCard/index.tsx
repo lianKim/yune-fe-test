@@ -1,8 +1,8 @@
-import { Image } from '~apis/images';
+import { ImageDataType } from '~apis/images';
 import * as styles from './ImageCard.module.css';
 
 interface ImageCardProps {
-  data: Image;
+  data: ImageDataType;
   isAnimating?: boolean;
 }
 
