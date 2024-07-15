@@ -33,8 +33,10 @@
     "react/prop-types": "off",
     // React Hooks의 의존성 배열을 정확하게 명시하도록 경고
     "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "warn",
     // TypeScript에서 'any' 타입의 명시적 사용을 허용
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off"
   },
   "ignorePatterns": ["node_modules/", "dist/", "webpack.*.js", "babel.*.js"]
 }

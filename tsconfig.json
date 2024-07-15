@@ -11,9 +11,7 @@
     "paths": {
       "~components/*": ["components/*"],
       "~pages/*": ["pages/*"],
-      "~assets/*": ["assets/*"],
-      "~styles/*": ["lib/styles/*"],
-      "~utils/*": ["lib/utils/*"]
+      "~apis/*": ["lib/apis/*"]
     }
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],

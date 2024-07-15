@@ -2,8 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
-const prod = process.env.NODE_ENV === 'production';
-
 module.exports = {
   mode: 'development',
   entry: './src/index.tsx',
@@ -16,9 +14,7 @@ module.exports = {
     alias: {
       '~components': path.resolve(__dirname, 'src/components'),
       '~pages': path.resolve(__dirname, 'src/pages'),
-      '~assets': path.resolve(__dirname, 'src/assets'),
-      '~styles': path.resolve(__dirname, 'src/lib/styles'),
-      '~utils': path.resolve(__dirname, 'src/lib/utils'),
+      '~apis': path.resolve(__dirname, 'src/lib/apis'),
     },
   },
   module: {
@@ -26,6 +22,25 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: ['babel-loader', 'ts-loader'],
+      },
+      // style-loader, css-loader 구성
+      {
+        test: /\.css$/i,
+        exclude: /\.module\.css$/i, // 모듈 파일 제외 설정
+        use: ['style-loader', 'css-loader'],
+      },
+      // CSS Module ([filename].module.css)
+      {
+        test: /\.module\.css$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+        ],
       },
     ],
   },
