@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
-import { ProductListType } from '~mocks/data/solution';
+import { ProductListType } from '~lib/mocks/data/solution';
 
 export const BASE_URL = 'http://localhost:3000';
 
@@ -27,8 +27,6 @@ const fetchProductList = async (
   const queryParams = new URLSearchParams([
     ...Object.entries(conditions),
   ]).toString();
-
-  console.log(queryParams);
 
   const res = await axios.get(`${BASE_URL}/solution?${queryParams}`);
 

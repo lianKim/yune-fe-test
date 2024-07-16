@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { type } = require('os');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -12,11 +13,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '~assets': path.resolve(__dirname, 'src/assets'),
-      '~components': path.resolve(__dirname, 'src/components'),
       '~pages': path.resolve(__dirname, 'src/pages'),
-      '~apis': path.resolve(__dirname, 'src/apis'),
-      '~mocks': path.resolve(__dirname, 'src/mocks'),
+      '~components': path.resolve(__dirname, 'src/components'),
+      '~lib': path.resolve(__dirname, 'src/lib'),
+      '~assets': path.resolve(__dirname, 'src/assets'),
     },
   },
   module: {
@@ -50,11 +50,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        type: 'asset/resource',
       },
     ],
   },

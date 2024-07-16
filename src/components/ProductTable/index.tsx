@@ -1,4 +1,4 @@
-import { ProductListType } from '~mocks/data/solution';
+import { ProductListType } from '~lib/mocks/data/solution';
 import * as styles from './ProductTable.module.css';
 
 interface ProductListProps {

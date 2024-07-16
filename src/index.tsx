@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { initMSW } from '~lib/mocks';
 import App from './App';
-import { initMSW } from './mocks';
 
 async function deferRender() {
   await initMSW();

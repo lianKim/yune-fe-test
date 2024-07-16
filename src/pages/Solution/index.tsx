@@ -1,5 +1,5 @@
 import { FormEvent, useCallback, useState } from 'react';
-import { FilterConditionsType, useProductList } from '~apis/solution';
+import { FilterConditionsType, useProductList } from '~lib/apis/solution';
 import ProductTable from '~components/ProductTable';
 import SearchForm from '~components/SearchForm';
 

@@ -3,7 +3,7 @@ import {
   ImageDataType,
   TOTAL_PAGES,
   usePaginatedImageList,
-} from '~apis/images';
+} from '~lib/apis/images';
 import ImageCard from '~components/ImageCard';
 import PagingNavigation from '~components/PagingNavigation';
 import * as styles from './Pagination.module.css';

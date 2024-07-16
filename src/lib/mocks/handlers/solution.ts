@@ -1,6 +1,6 @@
 import { http, HttpResponse } from 'msw';
-import { BASE_URL } from '~apis/solution';
-import { productList, ProductType } from '~mocks/data/solution';
+import { BASE_URL } from '~lib/apis/solution';
+import { productList, ProductType } from '~lib/mocks/data/solution';
 
 const filterProduct = (
   product: ProductType,

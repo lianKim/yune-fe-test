@@ -1,7 +1,7 @@
 import { useEffect, Fragment, Suspense } from 'react';
-import { useScrollImageList } from '~apis/images';
+import { useScrollImageList } from '~lib/apis/images';
+import { useIntersectionObserver } from '~lib/hooks/useIntersectionObserver';
 import ImageCard from '~components/ImageCard';
-import { useIntersectionObserver } from './useIntersectionObserver';
 import * as styles from './InfiniteScroll.module.css';
 
 export default function InfiniteScroll() {

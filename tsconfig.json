@@ -9,11 +9,10 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "~assets/*": ["src/assets/*"],
-      "~components/*": ["src/components/*"],
       "~pages/*": ["src/pages/*"],
-      "~apis/*": ["src/apis/*"],
-      "~mocks/*": ["src/mocks/*"]
+      "~components/*": ["src/components/*"],
+      "~lib/*": ["src/lib/*"],
+      "~assets/*": ["src/assets/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
