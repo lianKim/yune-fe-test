@@ -61,7 +61,7 @@ module.exports = {
       React: 'react',
     }),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './public/index.html',
     }),
     // 환경변수 사용
     new webpack.ProvidePlugin({

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
@@ -35,4 +35,4 @@
     local('Poppins'),
     url('/public/assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
     url('/public/assets/fonts/Poppins/Poppins-Regular.woff') format('woff');
-}
+} */

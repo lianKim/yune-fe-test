@@ -1,5 +1,5 @@
 @import './reset.css';
-@import './fonts.css';
+/* @import './fonts.css'; */
 
 :root {
   /* Color */
@@ -44,7 +44,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', 'Noto Sans KR';
+  /* font-family: 'Poppins', 'Noto Sans KR'; */
   font-size: var(--font-md);
   font-weight: var(--weight-regular);
   color: var(--color-gray-700);
