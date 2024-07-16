@@ -28,7 +28,7 @@ const root = ReactDOM.createRoot(
 deferRender().then(() => {
   root.render(
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </QueryClientProvider>,

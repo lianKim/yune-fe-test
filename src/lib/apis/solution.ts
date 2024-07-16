@@ -2,7 +2,10 @@ import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import { ProductListType } from '~lib/mocks/data/solution';
 
-export const BASE_URL = 'http://localhost:3000';
+const prod = process.env.NODE_ENV === 'production';
+export const BASE_URL = prod
+  ? 'https://liankim.github.io/yune-fe-test/'
+  : 'http://localhost:3000';
 
 export interface FilterConditionsType {
   product_code?: string;
