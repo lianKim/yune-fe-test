@@ -6,8 +6,10 @@
   unicode-range: U+AC00- U+D7A3;
   src:
     local('NotoSansKR'),
-    url('/src/assets/fonts/notoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
-    url('/src/assets/fonts/notoSansKR/NotoSansKR-Regular.woff') format('woff');
+    url('/public/assets/fonts/notoSansKR/NotoSansKR-Regular.woff2')
+      format('woff2'),
+    url('/public/assets/fonts/notoSansKR/NotoSansKR-Regular.woff')
+      format('woff');
 }
 
 @font-face {
@@ -18,8 +20,9 @@
   unicode-range: U+AC00- U+D7A3;
   src:
     local('NotoSansKR'),
-    url('/src/assets/fonts/notoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
-    url('/src/assets/fonts/notoSansKR/NotoSansKR-Medium.woff') format('woff');
+    url('/public/assets/fonts/notoSansKR/NotoSansKR-Medium.woff2')
+      format('woff2'),
+    url('/public/assets/fonts/notoSansKR/NotoSansKR-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -30,6 +33,6 @@
   unicode-range: U+AC00- U+D7A3;
   src:
     local('Poppins'),
-    url('/src/assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
-    url('/src/assets/fonts/Poppins/Poppins-Regular.woff') format('woff');
+    url('/public/assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('/public/assets/fonts/Poppins/Poppins-Regular.woff') format('woff');
 }

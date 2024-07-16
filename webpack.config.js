@@ -18,7 +18,7 @@ module.exports = {
       '~pages': path.resolve(__dirname, 'src/pages'),
       '~components': path.resolve(__dirname, 'src/components'),
       '~lib': path.resolve(__dirname, 'src/lib'),
-      '~assets': path.resolve(__dirname, 'src/assets'),
+      '~assets': path.resolve(__dirname, 'public/assets'),
     },
   },
   module: {
@@ -61,7 +61,11 @@ module.exports = {
       React: 'react',
     }),
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './public/index.html',
+    }),
+    // 환경변수 사용
+    new webpack.ProvidePlugin({
+      process: 'process/browser.js',
     }),
     // for webpack-dev-server
     new webpack.HotModuleReplacementPlugin(),
