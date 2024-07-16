@@ -14,12 +14,12 @@ export default function InfiniteScroll() {
     if (!isInView) return;
 
     fetchNextPage();
-  }, [isInView]);
+  }, [isInView, fetchNextPage]);
 
   return (
     <Suspense fallback={<div>Loading images...</div>}>
       {data && data.pages.length > 0 && (
-        <div>
+        <div className={styles.container}>
           <div className={styles.imageList}>
             {data.pages.map((page, i) => (
               <Fragment key={i}>
@@ -30,7 +30,7 @@ export default function InfiniteScroll() {
               </Fragment>
             ))}
           </div>
-          {!isFetchingNextPage && <div ref={targetRef}>...</div>}
+          {!isFetchingNextPage && <div ref={targetRef} />}
         </div>
       )}
     </Suspense>

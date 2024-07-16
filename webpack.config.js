@@ -48,6 +48,14 @@ module.exports = {
         test: /\.svg$/i,
         use: ['@svgr/webpack'],
       },
+      {
+        test: /\.(woff|woff2)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [

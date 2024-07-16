@@ -1,4 +1,5 @@
 @import './reset.css';
+@import './fonts.css';
 
 :root {
   /* Color */
@@ -28,6 +29,8 @@
   --space-md: 12px;
   --space-lg: 20px;
   --space-xl: 32px;
+  /* Element Size */
+  --header-height: 60px;
 }
 
 html {
@@ -41,16 +44,23 @@ html {
 }
 
 body {
+  font-family: 'Poppins', 'Noto Sans KR';
   font-size: var(--font-md);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-gray-700);
   background-color: var(--color-white);
+}
+
+input,
+textarea,
+button {
+  font-family: 'Poppins', 'Noto Sans KR';
+  font-size: var(--font-sm);
+  color: var(--color-gray-700);
 }
 
 input {
   padding: var(--space-xs) var(--space-sm);
-  font-size: var(--font-sm);
-  color: var(--color-gray-700);
   background-color: var(--color-white);
   border: 1px solid var(--color-gray-500);
 }
@@ -61,7 +71,6 @@ input::placeholder {
 
 button {
   padding: var(--space-sm) var(--space-md);
-  font-size: var(--font-sm);
   cursor: pointer;
 }
 

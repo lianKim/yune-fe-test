@@ -2,7 +2,6 @@ import { FormEvent, useCallback, useState } from 'react';
 import { FilterConditionsType, useProductList } from '~apis/solution';
 import ProductTable from '~components/ProductTable';
 import SearchForm from '~components/SearchForm';
-import * as styles from './Solution.module.css';
 
 export default function Solution() {
   const [filterConditions, setFilterConditions] =
@@ -19,9 +18,9 @@ export default function Solution() {
   }, []);
 
   return (
-    <main className={styles.container}>
+    <>
       <SearchForm onSubmitForm={handleFormSubmit} />
       {data && <ProductTable data={data} />}
-    </main>
+    </>
   );
 }

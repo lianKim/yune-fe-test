@@ -12,6 +12,7 @@
 .table {
   width: 100%;
   position: relative;
+  color: var(--color-gray-600);
   background-color: var(--color-white);
 }
 
@@ -19,11 +20,15 @@
   width: 100%;
   position: sticky;
   top: 0;
-  font-weight: var(--weight-medium);
 }
 
-.table > thead tr {
+.table > thead > tr {
   background-color: var(--color-gray-100);
+}
+
+.table > thead > tr > td {
+  font-weight: var(--weight-medium);
+  color: var(--color-gray-700);
 }
 
 .table tr {
