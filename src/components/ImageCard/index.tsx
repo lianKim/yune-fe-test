@@ -1,12 +1,17 @@
 import { ImageDataType } from '~apis/images';
 import * as styles from './ImageCard.module.css';
+import { memo, useEffect } from 'react';
 
 interface ImageCardProps {
   data: ImageDataType;
   isAnimating?: boolean;
 }
 
-export default function ImageCard({ data, isAnimating }: ImageCardProps) {
+export default memo(function ImageCard({ data, isAnimating }: ImageCardProps) {
+  useEffect(() => {
+    console.log('image rendered');
+  });
+
   return (
     <div
       className={`${styles.imageContainer} ${isAnimating ? styles.upAnimation : ''}`}
@@ -18,4 +23,4 @@ export default function ImageCard({ data, isAnimating }: ImageCardProps) {
       />
     </div>
   );
-}
+});
