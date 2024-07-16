@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+AC00- U+D7A3;
+  src:
+    local('NotoSansKR'),
+    url('/src/assets/fonts/notoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/notoSansKR/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  unicode-range: U+AC00- U+D7A3;
+  src:
+    local('NotoSansKR'),
+    url('/src/assets/fonts/notoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
+    url('/src/assets/fonts/notoSansKR/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+AC00- U+D7A3;
+  src:
+    local('Poppins'),
+    url('/src/assets/fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/Poppins/Poppins-Regular.woff') format('woff');
+}

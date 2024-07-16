@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.pageBtn {
+  font-size: var(--font-lg);
+  color: var(--color-gray-500);
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+}
+
+.pageBtn.active {
+  color: var(--color-green);
+}
+
+.pageBtn:not(.active):hover {
+  color: var(--color-gray-700);
+}
+
+/* Chevron Icon */
+.pageBtn:not(.active):not(:disabled):hover > svg {
+  fill: var(--color-gray-700);
+}

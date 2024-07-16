@@ -1,0 +1,42 @@
+{
+  "env": { "browser": true, "es2020": true },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended", // ESLint의 기본 권장 규칙
+    "plugin:react/recommended", // React를 위한 권장 규칙
+    "plugin:react-hooks/recommended", // React Hooks를 위한 권장 규칙
+    "plugin:@typescript-eslint/recommended", // TypeScript를 위한 권장 규칙
+    "plugin:prettier/recommended" // Prettier와 ESLint를 함께 사용하기 위한 설정
+  ],
+  "settings": {
+    "react": {
+      // 현재 React 버전 명시하지 않을 경우
+      // React 라이브러리 전체를 불러오므로 속도 저하 야기
+      "version": "^18.3.1"
+    }
+  },
+  // TypeScript 코드를 분석하기 위한 파서
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "tsconfigRootDir": "./",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    //import React from 'react' 없이 사용 가능한 설정
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    // DOM에 정의되지 않은 속성을 사용했는지 체크
+    "react/no-unknown-property": "off",
+    // 정의한 props 중에 빠진게 있는지 체크
+    "react/prop-types": "off",
+    // React Hooks의 의존성 배열을 정확하게 명시하도록 경고
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    // TypeScript에서 'any' 타입의 명시적 사용을 허용
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "webpack.*.js", "babel.*.js"]
+}
