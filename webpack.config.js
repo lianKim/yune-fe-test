@@ -3,8 +3,10 @@ const { type } = require('os');
 const path = require('path');
 const webpack = require('webpack');
 
+const prod = process.env.NODE_ENV === 'production';
+
 module.exports = {
-  mode: 'development',
+  mode: prod ? 'production' : 'development',
   entry: './src/index.tsx',
   output: {
     path: path.join(__dirname, '/dist'),
