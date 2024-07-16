@@ -59,7 +59,7 @@
   "license": "MIT",
   "msw": {
     "workerDirectory": [
-      "public"
+      "./public"
     ]
   }
 }

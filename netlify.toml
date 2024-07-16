@@ -1,5 +1,9 @@
 [build]
-    command = "yarn build"
+  command = """
+    yarn install --force
+    yarn build
+    npx msw init ./dist --save
+  """
     publish = "dist"
 [[redirects]]
     from = "/*"
