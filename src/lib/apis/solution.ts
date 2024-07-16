@@ -4,7 +4,7 @@ import { ProductListType } from '~lib/mocks/data/solution';
 
 const prod = process.env.NODE_ENV === 'production';
 export const BASE_URL = prod
-  ? 'https://liankim.github.io/yune-fe-test/'
+  ? 'https://yune-fe-test.netlify.app/'
   : 'http://localhost:3000';
 
 export interface FilterConditionsType {
