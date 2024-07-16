@@ -6,10 +6,7 @@
     "build": "webpack --mode production",
     "start": "webpack --mode development",
     "postinstall": "husky install",
-    "lint-staged": "lint-staged",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist",
-    "homepage": "https://liankim.github.io/yune-fe-test/"
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "**/*.{tsx,ts,jsx,js}": [
