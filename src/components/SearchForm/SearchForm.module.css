@@ -1,0 +1,54 @@
+.form {
+  background-color: var(--color-gray-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: var(--font-sm);
+  padding: var(--space-md);
+}
+
+.fields {
+  width: 100%;
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.fieldBundle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fieldContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.fieldContainer label {
+  width: 25%;
+}
+
+.fieldContainer .range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+}
+
+.fieldContainer input {
+  width: 100%;
+}
+
+.searchBtn {
+  margin-top: var(--space-sm);
+  align-self: flex-end;
+  font-weight: var(--weight-medium);
+  color: var(--color-white);
+  background-color: var(--color-gray-500);
+}

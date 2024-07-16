@@ -15,7 +15,8 @@ module.exports = {
       '~assets': path.resolve(__dirname, 'src/assets'),
       '~components': path.resolve(__dirname, 'src/components'),
       '~pages': path.resolve(__dirname, 'src/pages'),
-      '~apis': path.resolve(__dirname, 'src/lib/apis'),
+      '~apis': path.resolve(__dirname, 'src/apis'),
+      '~mocks': path.resolve(__dirname, 'src/mocks'),
     },
   },
   module: {

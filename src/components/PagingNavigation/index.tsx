@@ -42,7 +42,7 @@ export default function PagingNavigation({
         <Icon name="ChevronLeft" fill="var(--color-gray-500)" />
       </button>
       {/* Page Number Buttons */}
-      {Array.from({ length: totalPages }, (v, i) => i).map((idx) => {
+      {Array.from({ length: totalPages }, (_, i) => i).map((idx) => {
         const page = idx + 1;
 
         return (

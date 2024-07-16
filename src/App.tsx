@@ -5,6 +5,7 @@ import './global.css';
 const Home = lazy(() => import('./pages/Home'));
 const InfiniteScroll = lazy(() => import('./pages/InfiniteScroll'));
 const Pagination = lazy(() => import('./pages/Pagination'));
+const Solution = lazy(() => import('./pages/Solution'));
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="scroll" element={<InfiniteScroll />} />
           <Route path="pagination" element={<Pagination />} />
+          <Route path="solution" element={<Solution />} />
         </Route>
       </Routes>
     </Suspense>

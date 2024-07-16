@@ -1,0 +1,40 @@
+.wrapper {
+  margin-top: var(--space-lg);
+  height: 66.66%;
+  overflow: hidden;
+}
+
+.container {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+}
+
+.table > thead {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  font-weight: var(--weight-medium);
+}
+
+.table > thead tr {
+  background-color: var(--color-gray-100);
+}
+
+.table tr {
+  border-bottom: 1px solid var(--color-gray-300);
+  background-color: var(--color-white);
+}
+
+.table tr:hover {
+  background-color: var(--color-gray-100);
+}
+
+.table td {
+  padding: var(--space-sm) var(--space-xs);
+}

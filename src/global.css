@@ -2,6 +2,8 @@
 
 :root {
   /* Color */
+  --color-gray-100: #f1f1f1;
+  --color-gray-200: #e9ebed;
   --color-gray-300: #dbdee2;
   --color-gray-400: #ced7da;
   --color-gray-500: #aab1bc;
@@ -12,12 +14,18 @@
   --color-green: #3f8e41;
   /* Font Size */
   --font-base: 10px;
+  --font-xs: 1.2rem;
+  --font-sm: 1.4rem;
   --font-md: 1.6rem;
   --font-lg: 2rem;
   --font-xl: 2.4rem;
   /* Font Weight */
   --weight-regular: 400;
+  --weight-medium: 500;
   /* Space */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
   --space-lg: 20px;
   --space-xl: 32px;
 }
@@ -39,7 +47,21 @@ body {
   background-color: var(--color-white);
 }
 
+input {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--font-sm);
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-500);
+}
+
+input::placeholder {
+  color: var(--color-gray-500);
+}
+
 button {
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-sm);
   cursor: pointer;
 }
 
