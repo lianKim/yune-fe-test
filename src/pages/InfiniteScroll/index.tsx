@@ -1,21 +1,20 @@
 import { useEffect, Fragment, Suspense } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { useScrollImageList } from '~apis/images';
 import ImageCard from '~components/ImageCard';
+import { useIntersectionObserver } from './useIntersectionObserver';
 import * as styles from './InfiniteScroll.module.css';
 
 export default function InfiniteScroll() {
   const { data, fetchNextPage, isFetchingNextPage } = useScrollImageList();
-  const { ref, inView } = useInView({
+  const { targetRef, isInView } = useIntersectionObserver({
     threshold: 0.1,
-    triggerOnce: true,
   });
 
   useEffect(() => {
-    if (!inView) return;
+    if (!isInView) return;
 
     fetchNextPage();
-  }, [inView]);
+  }, [isInView]);
 
   return (
     <Suspense fallback={<div>Loading images...</div>}>
@@ -31,7 +30,7 @@ export default function InfiniteScroll() {
               </Fragment>
             ))}
           </div>
-          {!isFetchingNextPage && <div ref={ref}>...</div>}
+          {!isFetchingNextPage && <div ref={targetRef}>...</div>}
         </div>
       )}
     </Suspense>
